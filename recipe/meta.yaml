@@ -1,5 +1,5 @@
 {% set name = "sunode" %}
-{% set version = "0.1.1" %}
+{% set version = "0.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://github.com/aseyboldt/sunode/archive/v{{ version }}.tar.gz
-  sha256: 69d12dc11963db3b525325c19f143be153fc59c5f6d7fca13243941565fbf4b5
+  sha256: 39beecc0ff345403160abb21a5b61649d3f66bcf53704b5311c9970c9ef6cac5
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<37]
+  script: {{ PYTHON }} -m pip install . -vv
+  skip: true  # [py<37]
 
 requirements:
   build:
@@ -50,7 +50,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python interface to sundials with support for derivatives and PyMC3'
+  summary: Python interface to sundials with support for derivatives and PyMC3
 
   doc_url: https://sunode.readthedocs.io/
   dev_url: https://github.com/aseyboldt/sunode

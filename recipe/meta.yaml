@@ -1,5 +1,5 @@
 {% set name = "sunode" %}
-{% set version = "0.2" %}
+{% set version = "0.2.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/aseyboldt/sunode/archive/v{{ version }}.tar.gz
-  sha256: b05b27abe2f63472fbfdbdfd9dc926cc4b58cf7bdc1b9d0cec9ef402a7954d7b
+  sha256: 5f5950ab7c02ba02a241fd84954e0bad31607098e6f9e5eeebf117ffa2a8ce46
 
 build:
   number: 0

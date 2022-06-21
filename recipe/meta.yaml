@@ -10,7 +10,7 @@ source:
   sha256: 4d6dca6eb06da597da108c8d6a507834e1f58f55b9cc50d0baac2eca20c8b1e8
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<37]
 
@@ -20,15 +20,17 @@ requirements:
   host:
     - python
     - pip
+    - numpy >=1.14
+    - liblapack
     - cffi
-    - sundials >=5.3
+    - sundials >=5.3,<6.0
   run:
     - python
     - numpy >=1.14
     - cffi
     - xarray >=0.15
     - scipy
-    - sundials >=5.3
+    - sundials >=5.3,<6.0
     - numba >=0.49
     - typing_extensions
     - sympy >=1.8

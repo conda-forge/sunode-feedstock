@@ -1,16 +1,17 @@
 {% set name = "sunode" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/aseyboldt/sunode/archive/v{{ version }}.tar.gz
-  sha256: 4d6dca6eb06da597da108c8d6a507834e1f58f55b9cc50d0baac2eca20c8b1e8
+  url: https://github.com/aseyboldt/sunode/archive/v{{ version }}-alpha.tar.gz
+  sha256: bbbb88933ae4cef620046898058336d52a4ca02078c8145904fbfe85e099b745
+
 
 build:
-  number: 3
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<37]
 

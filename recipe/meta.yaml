@@ -6,8 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/aseyboldt/sunode/archive/v{{ version }}-alpha.tar.gz
-  sha256: bbbb88933ae4cef620046898058336d52a4ca02078c8145904fbfe85e099b745
+  url: https://github.com/aseyboldt/sunode/archive/v{{ version }}.tar.gz
+  sha256: 9af8697cb4bf2b02180ae52acccf04c94da8a687007c0aa2ad83a0fc7a882abc
 
 
 build:

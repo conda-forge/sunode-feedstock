@@ -1,5 +1,5 @@
 {% set name = "sunode" %}
-{% set version = "0.2.2" %}
+{% set version = "0.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,11 @@ package:
 
 source:
   url: https://github.com/aseyboldt/sunode/archive/v{{ version }}.tar.gz
-  sha256: 4d6dca6eb06da597da108c8d6a507834e1f58f55b9cc50d0baac2eca20c8b1e8
+  sha256: 9af8697cb4bf2b02180ae52acccf04c94da8a687007c0aa2ad83a0fc7a882abc
+
 
 build:
-  number: 3
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
   skip: True  # [py<37]
 
@@ -20,18 +21,18 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.14
+    - numpy >=1.17,<1.22
     - liblapack
     - cffi
     - sundials >=5.3,<6.0
   run:
     - python
-    - numpy >=1.14
+    - numpy >=1.17,<1.22
     - cffi
     - xarray >=0.15
     - scipy
     - sundials >=5.3,<6.0
-    - numba >=0.49
+    - numba >=0.55
     - typing_extensions
     - sympy >=1.8
 

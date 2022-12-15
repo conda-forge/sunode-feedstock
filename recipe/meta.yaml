@@ -1,5 +1,5 @@
 {% set name = "sunode" %}
-{% set version = "0.3.0" %}
+{% set version = "0.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/pymc-devs/sunode/archive/v{{ version }}.tar.gz
-  sha256: 9af8697cb4bf2b02180ae52acccf04c94da8a687007c0aa2ad83a0fc7a882abc
+  sha256: 7c82b3872625052e537fe8099f69bf3b73169e8d560e2f07de7d9103753d1cbc
 
 
 build:
@@ -44,7 +44,7 @@ test:
     - hypothesis
     - statsmodels
     - pip
-    - aesara
+    - pytensor
   commands:
     - pip check
     - pytest --pyargs sunode

@@ -21,13 +21,13 @@ requirements:
   host:
     - python
     - pip
-    - numpy >=1.17,<1.22
+    - numpy >=1.17
     - liblapack
     - cffi
     - sundials >=5.3,<6.0
   run:
     - python
-    - numpy >=1.17,<1.22
+    - numpy >=1.17
     - cffi
     - xarray >=0.15
     - scipy

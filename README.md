@@ -1,15 +1,15 @@
 About sunode
 ============
 
-Home: https://github.com/aseyboldt/sunode
+Home: https://github.com/pymc-devs/sunode
 
 Package license: MIT
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/sunode-feedstock/blob/main/LICENSE.txt)
 
-Summary: Python interface to sundials with support for derivatives and PyMC3
+Summary: Python interface to sundials with support for derivatives and PyMC
 
-Development: https://github.com/aseyboldt/sunode
+Development: https://github.com/pymc-devs/sunode
 
 Documentation: https://sunode.readthedocs.io/
 

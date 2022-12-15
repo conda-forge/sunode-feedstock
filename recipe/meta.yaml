@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/aseyboldt/sunode/archive/v{{ version }}.tar.gz
+  url: https://github.com/pymc-devs/sunode/archive/v{{ version }}.tar.gz
   sha256: 9af8697cb4bf2b02180ae52acccf04c94da8a687007c0aa2ad83a0fc7a882abc
 
 
@@ -50,14 +50,14 @@ test:
     - pytest --pyargs sunode
 
 about:
-  home: https://github.com/aseyboldt/sunode
+  home: https://github.com/pymc-devs/sunode
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Python interface to sundials with support for derivatives and PyMC3'
+  summary: 'Python interface to sundials with support for derivatives and PyMC'
 
   doc_url: https://sunode.readthedocs.io/
-  dev_url: https://github.com/aseyboldt/sunode
+  dev_url: https://github.com/pymc-devs/sunode
 
 extra:
   recipe-maintainers:

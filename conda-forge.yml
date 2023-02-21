@@ -4,4 +4,3 @@ github:
   tooling_branch_name: main
 conda_build:
   pkg_format: 2    # makes .conda artifacts
-  pkg_format: None # makes .tar.bz2 artifacts

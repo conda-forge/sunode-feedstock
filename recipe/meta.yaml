@@ -49,7 +49,7 @@ test:
     - pytensor
   commands:
     - pip check
-    - pytest --pyargs sunode
+    - CXXFLAGS=-Wno-c++11-narrowing pytest --pyargs sunode
 
 about:
   home: https://github.com/pymc-devs/sunode

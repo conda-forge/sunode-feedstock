@@ -302,6 +302,3 @@ Feedstock Maintainers
 * [@aseyboldt](https://github.com/aseyboldt/)
 * [@michaelosthege](https://github.com/michaelosthege/)
 
-
-<!-- dummy commit to enable rerendering -->
-

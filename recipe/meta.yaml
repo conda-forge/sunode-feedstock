@@ -1,5 +1,5 @@
 {% set name = "sunode" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/pymc-devs/sunode/archive/v{{ version }}.tar.gz
-  sha256: e4da57f7ffec7b85277fd8847a3d3340f5c162278e6659c1591586f16c0385cd
+  sha256: 72eebe5a5ab41371ac075174c791ab198b74dfeaa4342721b9ee6ecbfef7719b
 
 
 build:
-  number: 1
+  number: 0
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: True  # [py<=37]
+  skip: true  # [py<=37]
 
 requirements:
   build:

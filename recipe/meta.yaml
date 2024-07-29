@@ -11,9 +11,14 @@ source:
 
 
 build:
-  number: 0
+  number: 1
   script: "{{ PYTHON }} -m pip install . -vv"
-  skip: true  # [py<=37]
+  # osx_64 builds fail, see:
+  #   <https://github.com/conda-forge/sunode-feedstock/pull/35>
+  #   <https://github.com/pymc-devs/pytensor/pull/725>
+  # also python 3.8 fails on linux with:
+  #   <https://github.com/conda-forge/sunode-feedstock/pull/27#issuecomment-1991217351>
+  skip: true  # [(py<=37) or (linux and py<=38) or (osx and x86_64)]
 
 requirements:
   build:
